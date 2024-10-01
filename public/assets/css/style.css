@@ -1,0 +1,325 @@
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d; 
+}
+
+.text-primary{
+  color: #ED6D55;
+}
+
+.text-secondcolor{
+  color: #425969;
+}
+
+/* SpeedoMeter chart */
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 210px;
+  max-width: 200px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+/*end*/
+
+.hide {
+  display: none; /* PASSWORD HIDE SHOW */
+}
+.password-container{
+  cursor: pointer;
+}
+
+/* switch button */
+
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 110px;
+ height: 30px;
+}
+
+.switch input {
+ display: none;
+}
+
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #425969;
+ -webkit-transition: .4s;
+ transition: .4s;
+ border-radius: 30px;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 22px;
+ width: 22px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+ border-radius: 50%;
+}
+
+input:checked + .slider {
+ background-color: #0E6EB8;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(80px);
+}
+
+/*------ ADDED CSS ---------*/
+.slider:after {
+ content: 'DISABLED';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 9px;
+ font-family: Verdana, sans-serif;
+}
+
+input:checked + .slider:after {
+ content: 'ENABLED';
+}
+
+/*--------- END --------*/
+
+/*-------- coupon---------*/
+
+.box1 {
+ /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  color: #fff;*/
+/*  background: linear-gradient(to bottom right, #103a43, #434343);*/
+}
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  .ribbon {
+    font: bold 10px sans-serif;
+    color: #333;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg);
+    -ms-transform:     rotate(-45deg);
+    -o-transform:      rotate(-45deg);
+    position: relative;
+    padding: 2px 0;
+    top: 15px;
+    left: -30px;
+    width: 120px;
+    background-color: #006600;
+    color: #fff;
+  }
+}
+
+.ribbon-wrapper1 {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  .ribbon1 {
+    font: bold 10px sans-serif;
+    color: #333;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg);
+    -ms-transform:     rotate(-45deg);
+    -o-transform:      rotate(-45deg);
+    position: relative;
+    padding: 2px 0;
+    top: 15px;
+    left: -30px;
+    width: 120px;
+    background-color: #ff0000;
+    color: #fff;
+  }
+}
+
+.rubber_stamp {
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  position: absolute;
+  top: 10%;
+  left: 35%;
+/* z-index: 99999;*/
+}
+.rubber_stamp::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  top: -10px;
+  left: -10px;
+  padding: 10px;
+}
+
+.labelreferral {
+   padding: 5px;
+   font-size: 18px;
+   color: #111;
+}
+.copy-text {
+   position: relative;
+   padding: 5px;
+   background: #fff;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   display: flex;
+}
+.copy-text input.text {
+   padding: 10px;
+   font-size: 18px;
+   color: #555;
+   border: none;
+   outline: none;
+}
+.copy-text button {
+   padding: 10px;
+   background: #ED6D55;
+   color: #fff;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.copy-text button:active {
+   background: #ED6D55;
+}
+.copy-text button:before {
+   content: "Copied";
+   position: absolute;
+   top: -45px;
+   right: 0px;
+   background: #ED6D55;
+   padding: 8px 10px;
+   border-radius: 20px;
+   font-size: 15px;
+   display: none;
+}
+.copy-text button:after {
+   content: "";
+   position: absolute;
+   top: -20px;
+   right: 25px;
+   width: 10px;
+   height: 10px;
+   background: #ED6D55;
+   transform: rotate(45deg);
+   display: none;
+}
+.copy-text.active button:before,
+.copy-text.active button:after {
+   display: block;
+}
+
+/* Ck Editer */
+.ck{
+  height: 250px;
+}
+
+/* dataTable search filter none */
+
+.dataTables_filter {
+    display: none;
+}
+
+.dataTables_length {
+    display: none;
+}
+
+/* Apply overflow-x: scroll to the second row of the DataTables wrapper */
+
+/*.dataTables_wrapper .row:nth-child(2) {
+    overflow-x: scroll;
+}*/
+
+/* Scrollbar styles */
+.dataTables_wrapper.row:nth-child(2)::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dataTables_wrapper.row:nth-child(2)::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.dataTables_wrapper.row:nth-child(2)::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d;
+}
